@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { createStyles, WithStyles, withStyles } from '@material-ui/core'
-import _ from 'lodash'
 import MuiTheme from '../MuiTheme';
+import { Switch, Route } from 'react-router';
 
 interface IProps extends WithStyles<typeof STYLES> { }
 
@@ -11,7 +11,9 @@ class AppNavigation extends Component<IProps> {
         const { classes } = this.props
         return (
             <div>
-
+                <Switch>
+                    <Route />
+                </Switch>
             </div>
         )
     }
